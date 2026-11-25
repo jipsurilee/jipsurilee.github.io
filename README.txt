@@ -1,0 +1,1 @@
+관리자 연결: GitHub Pages에 전체 파일을 배포한 후 하단 관리자 클릭. GitHub fine-grained personal access token을 해당 저장소에만 발급하고 Contents 읽기/쓰기 권한을 부여하세요. 토큰은 공유하지 마세요. 연결 시 서버 최신 데이터로 로컬 편집 내용이 교체됩니다. 시공사례 저장 후 게시 버튼을 누르세요. 사진은 기존 WebP 데이터 방식이며 20MB 제한이 있어 대량 등록 전 사진 분리 저장 개선이 필요합니다. GitHub Pages 배포 설정 및 실제 권한 테스트는 별도 필요합니다. 관리자 HTML은 공개되지만 GitHub 쓰기 권한 없이는 게시할 수 없습니다. 토큰 연결은 GitHub OAuth 로그인이 아닙니다.

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>집수리 이선생 | 서울·경기·인천 집수리·하자보수</title>
+<meta name="description" content="건물 하자보수부터 시설물 시공까지, 현장에 맞는 방법으로 필요한 부분을 제대로 시공합니다. 서울·경기·인천 집수리.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1f44;--surface:#132c5a;--ink:#f2f6ff;--muted:#b4c1dc;--line:#2b4478;--brand:#ff7a1a;--brand-ink:#1a0b00;--mark:#ffc233;--mark-ink:#241700;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1f44;--surface:#132c5a;--ink:#f2f6ff;--muted:#b4c1dc;--line:#2b4478;--brand:#ff7a1a;--brand-ink:#1a0b00;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1f44;--surface:#132c5a;--ink:#f2f6ff;--muted:#b4c1dc;--line:#2b4478;--brand:#ff7a1a;--brand-ink:#1a0b00;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 "Noto Sans KR",system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;word-break:keep-all;padding-bottom:72px}
+a{color:inherit}.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.3;margin:0}h2{font-size:clamp(22px,4vw,30px);font-weight:900;letter-spacing:-.02em}
+.sub{color:var(--muted);margin:8px 0 28px;max-width:60ch}section{padding:52px 0}
+header.top{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:3px solid var(--mark);padding-top:env(safe-area-inset-top,0px)}
+header.top .wrap{display:flex;align-items:center;gap:16px;height:60px}
+.logo{font-weight:900;font-size:19px;text-decoration:none}.logo small{display:block;font-weight:400;font-size:11px;color:var(--muted);line-height:1.1}
+nav{margin-left:auto;display:flex;gap:18px;font-size:14px;font-weight:500}nav a{text-decoration:none;color:var(--muted)}
+.tel{background:var(--brand);color:var(--brand-ink);padding:8px 14px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
+@media(max-width:820px){nav{display:none}.tel{margin-left:auto}}
+.hero{padding:48px 0 36px}.hero .grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+@media(max-width:820px){.hero .grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(28px,5.6vw,48px);font-weight:900;letter-spacing:-.03em}.hero h1 span{color:var(--mark)}
+.hero p{color:var(--muted);margin:16px 0 24px;max-width:46ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:13px 20px;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid var(--brand);background:var(--brand);color:var(--brand-ink)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.yel{background:var(--mark);border-color:var(--mark);color:var(--mark-ink)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+.ticket{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--mark);padding:20px 22px;border-radius:4px}
+.ticket h3{font-size:16px;margin-bottom:12px}.ticket dl{margin:0;display:grid;grid-template-columns:64px 1fr;gap:6px 10px;font-size:14.5px}
+.ticket dt{color:var(--muted)}.ticket dd{margin:0;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:36px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px}.stat b{display:block;font-size:24px;color:var(--brand)}.stat span{font-size:13.5px;color:var(--muted)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px}.card h3{font-size:17px;margin-bottom:6px}.card p{margin:0;color:var(--muted);font-size:15px}
+.finder{background:var(--surface);border:1px solid var(--line);border-radius:6px;display:grid;grid-template-columns:200px 1fr}
+@media(max-width:720px){.finder{grid-template-columns:1fr}}
+.places{display:flex;flex-direction:column;border-right:1px solid var(--line)}
+@media(max-width:720px){.places{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line)}}
+.places button{all:unset;cursor:pointer;padding:13px 18px;font-weight:500;border-bottom:1px solid var(--line);white-space:nowrap}
+@media(max-width:720px){.places button{border-bottom:0}}
+.places button[aria-selected="true"]{background:var(--brand);color:var(--brand-ink);font-weight:700}
+.panel{padding:22px 24px}.panel h3{font-size:18px}.panel ul{margin:10px 0 16px;padding-left:20px}
+.photo{background:var(--bg);border-radius:4px;padding:10px 14px;font-size:14.5px}.photo b{display:block;font-size:13px;color:var(--muted);font-weight:500}
+.group{font-size:14px;font-weight:700;color:var(--muted);margin:24px 0 10px}
+.svc{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.svc div{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:16px 18px}.svc b{display:block}.svc span{font-size:13.5px;color:var(--muted);line-height:1.5;display:block}
+.cases{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.ba{display:grid;grid-template-columns:1fr 1fr;height:120px}
+.ba div{display:flex;align-items:flex-end;padding:8px 10px;font-size:12px;font-weight:700;background:repeating-linear-gradient(135deg,var(--line) 0 8px,transparent 8px 16px)}.ba div+div{background:var(--bg);border-left:2px solid var(--surface)}
+.case .tx{padding:14px 16px}.case small{color:var(--muted);font-size:12.5px}.case h3{font-size:16px;margin:4px 0 6px}.case p{margin:0;font-size:14px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px 18px 18px 58px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:16px;width:28px;height:28px;border-radius:50%;background:var(--mark);color:var(--mark-ink);font-weight:900;display:grid;place-items:center}
+.steps b{display:block}.steps span{font-size:14px;color:var(--muted)}
+.tag{font-size:12px;color:var(--muted)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:4px;margin-bottom:8px}
+summary{cursor:pointer;padding:15px 18px;font-weight:700;list-style:none}summary::-webkit-details-marker{display:none}summary::after{content:"+";float:right;font-weight:400}details[open] summary::after{content:"−"}
+details p{margin:0;padding:0 18px 16px;color:var(--muted)}
+footer{background:var(--surface);color:var(--ink);border-top:3px solid var(--brand);padding:44px 0 32px}footer a{color:inherit}
+footer .ticket{max-width:620px;margin-bottom:18px}
+#contact{scroll-margin-top:80px}
+footer .big{font-size:clamp(26px,5vw,38px);font-weight:900;text-decoration:none;display:inline-block;margin:6px 0 14px}
+footer small{display:block;opacity:.85;font-size:13px;margin-top:20px;line-height:1.6}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:1px solid var(--line)}
+.bar a{flex:1;text-align:center;padding:12px 6px;font-weight:700;border-radius:6px;text-decoration:none;background:var(--brand);color:var(--brand-ink)}.bar a:nth-child(2){background:var(--mark);color:var(--mark-ink)}
+@media(min-width:900px){.bar{display:none}body{padding-bottom:0}}
+.logo{display:flex;align-items:center;gap:9px;white-space:nowrap}.logo img{width:48px;height:40px;object-fit:contain;border-radius:4px}.logo span{display:block} @media(max-width:850px){nav{display:none}.tel{margin-left:auto}} @media(max-width:390px){header.top .wrap{padding:0 10px;gap:6px}.logo{font-size:16px;gap:5px}.logo img{width:34px;height:32px}.logo small{font-size:9px}.tel{font-size:12px;padding:7px 8px}}
+
+#contact .sms-intro{color:var(--muted);margin:0 0 16px}
+.sms-example{max-width:540px;background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:24px;box-sizing:border-box}
+.sms-head{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:18px}.sms-head strong,.sms-head div span{display:block}.sms-head div span{font-size:12px;color:var(--muted)}.sms-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--mark);color:var(--mark-ink);font-size:23px}
+.sms-bubble{background:var(--mark);color:var(--mark-ink);border-radius:18px 18px 4px 18px;padding:16px;margin-left:12px}.sms-bubble p{margin:0 0 12px;font-weight:700}.sms-bubble dl{display:grid;grid-template-columns:72px minmax(0,1fr);gap:8px;margin:0;font-size:14px}.sms-bubble dt{font-weight:700}.sms-bubble dd{margin:0;overflow-wrap:anywhere}
+.sms-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 0 12px}.sms-photos div{border:1px dashed var(--line);border-radius:10px;padding:12px 6px;text-align:center;font-size:13px}.sms-photos span{display:block;font-size:23px;margin-bottom:4px}
+
+.inquiry-form{color-scheme:light;background:#f5f7fa;color:#14233b;border-radius:12px;padding:clamp(18px,4vw,32px);max-width:780px;margin:0 0 24px;display:grid;gap:18px}.inquiry-form label{display:grid;gap:8px;font-weight:700;font-size:15px;min-width:0}.inquiry-form input,.inquiry-form select,.inquiry-form textarea{box-sizing:border-box;width:100%;border:1px solid #cbd3df;border-radius:7px;background:#fff;color:#14233b;padding:14px;font:inherit;font-weight:400}.inquiry-form textarea{resize:vertical}.inquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.photo-guide div{border:1px dashed #a4afbf;border-radius:8px;text-align:center;padding:16px 8px;font-size:14px}.photo-note,#copy-status{font-size:13px;margin:0;color:#526078}.inquiry-form button{border:0;background:#0b1f44;color:white;border-radius:7px;padding:16px;font:inherit;font-weight:700;cursor:pointer}#copy-status:empty{display:none}@media(max-width:480px){.inquiry-grid{grid-template-columns:1fr}}
+
+.inquiry-form{color-scheme:dark;background:transparent;color:var(--ink);max-width:none;padding:0;gap:16px}.inq-step{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:clamp(16px,3vw,26px);display:grid;gap:14px;margin:0}.inq-step h3{margin:0;font-size:20px;display:flex;align-items:center;gap:12px}.inq-step h3 em{font-style:normal;color:var(--brand);font-size:26px}.work-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.work-choice{position:relative;cursor:pointer}.work-choice:first-child{grid-column:1/-1}.work-choice input{position:absolute;opacity:0;width:1px;height:1px}.work-choice span{display:flex;align-items:center;justify-content:center;gap:9px;min-height:64px;padding:10px;background:var(--bg);border:1px solid var(--line);border-radius:8px;text-align:center}.work-choice b{color:var(--brand);font-size:24px}.work-choice input:checked+span{background:var(--mark);color:var(--mark-ink);border-color:var(--mark)}.work-choice input:checked+span b{color:var(--mark-ink)}.work-choice input:focus-visible+span{outline:2px solid white;outline-offset:3px}.inquiry-form input:not([type=radio]),.inquiry-form select,.inquiry-form textarea{background:var(--bg);color:var(--ink);border-color:#53688c}.inquiry-form input::placeholder,.inquiry-form textarea::placeholder{color:var(--muted)}.inquiry-form .photo-note,#copy-status{color:var(--muted)}.message-preview{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:12px}.message-preview pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:0;background:var(--mark);color:var(--mark-ink);padding:16px;border-radius:12px}.inquiry-form #copy-inquiry{background:var(--mark);color:var(--mark-ink)}@media(max-width:600px){.work-choices{grid-template-columns:repeat(2,minmax(0,1fr))}.work-choice span{flex-direction:column;font-size:13px}}
+[hidden]{display:none!important} #contact .big{font-size:clamp(26px,5vw,38px);font-weight:900;text-decoration:none;display:inline-block;margin:6px 0 14px} #contact .inquiry-form{margin-bottom:24px}
+#quick-contact .big{font-size:clamp(26px,5vw,38px);font-weight:900;text-decoration:none;color:var(--ink);display:inline-block;margin:6px 0 14px}
+#quick-contact .btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+</style>
+<style>.portfolio-link,.portfolio-filter button{display:inline-block;padding:12px 16px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;cursor:pointer;text-decoration:none}.portfolio-filter{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.portfolio-filter button.active{background:var(--mark);color:var(--mark-ink)}.portfolio-card{display:block;color:inherit;text-decoration:none;overflow:hidden}.portfolio-card:hover{border-color:var(--mark)}.portfolio-photo{aspect-ratio:4/3;background:#203960;display:grid;place-items:center;color:var(--muted);text-align:center}.portfolio-card .tx{padding:16px}.portfolio-card small{color:var(--brand)}.portfolio-view{padding:40px 0}.portfolio-view[hidden]{display:none}.portfolio-detail{max-width:800px;margin:auto}.portfolio-info{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0}.portfolio-info div{background:var(--surface);padding:16px;border-radius:8px}.portfolio-detail h3{margin-top:28px}.portfolio-detail .portfolio-photo{border-radius:8px}.portfolio-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}.portfolio-detail p{color:var(--muted)}@media(max-width:600px){.portfolio-info{grid-template-columns:1fr}}</style></head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top"><img src="data:image/jpeg;base64,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" alt="" width="48" height="40"><span>집수리 이선생<small>서울·경기·인천 집수리·하자보수</small></span></a>
+  <nav><a href="#why">소개</a><a href="#finder">증상별 찾기</a><a href="#service">시공분야</a><a href="#portfolio">시공사례</a><a href="#faq">FAQ</a><a href="#contact">문의하기</a><a href="https://blog.naver.com/leesunsaeng-" target="_blank" rel="noopener noreferrer">블로그</a></nav>
+  <a class="tel" href="tel:01058546543">010-5854-6543</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div class="grid">
+    <div>
+      <h1>건물 하자보수부터 시설물 시공까지,<br><span>현장에 맞는 방법으로 필요한 부분을 제대로 시공합니다.</span></h1>
+      <p>수리가 필요한 곳의 사진과 불편한 점을 알려주세요. 어떤 방법으로 해결할 수 있는지, 어떤 작업이 필요한지 안내해 드립니다. 시공 여부는 상담 후 결정하셔도 됩니다.</p>
+      <div class="btns">
+        <a class="btn" href="tel:01058546543">전화 걸기</a>
+        <a class="btn yel" data-sms="">사진 문자 보내기</a>
+      </div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>325건</b><span>누적 시공 기록</span></div>
+    <div class="stat"><b>책임 시공</b><span>상담부터 마무리까지</span></div>
+    <div class="stat"><b>사진 견적</b><span>방문 전 대략 안내</span></div>
+    <div class="stat"><b>서울·경기·인천</b><span>인근 지역 문의 가능</span></div>
+  </div>
+</div></section>
+
+<section id="why"><div class="wrap">
+  <h2>시공을 맡기기 전의 걱정, 이렇게 해결합니다.</h2>
+  <p class="sub">불필요한 공사는 없는지, 견적은 합리적인지, 시공은 제대로 이루어지는지. 고객이 안심하고 맡길 수 있도록 충분히 설명하고 책임 있게 시공합니다.</p>
+  <div class="grid4">
+    <div class="card"><h3>책임 있는 시공</h3><p>상담부터 현장 확인, 시공 및 마무리까지 책임 있게 진행합니다.</p></div>
+    <div class="card"><h3>불필요한 공사 최소화</h3><p>기존 시설의 상태를 확인하고 필요한 범위 내에서 효율적인 시공 방법을 제안합니다.</p></div>
+    <div class="card"><h3>원인부터 설명</h3><p>문제가 발생한 원인과 필요한 작업, 예상 비용을 알기 쉽게 안내합니다.</p></div>
+    <div class="card"><h3>시공 과정 공유</h3><p>작업 전후 사진을 통해 시공 과정과 결과를 확인할 수 있도록 안내합니다.</p></div>
+  </div>
+</div></section>
+
+<section id="flow"><div class="wrap">
+  <h2>시공 진행 절차</h2>
+  <p class="sub">상담부터 시공 마무리까지 책임 있게 진행합니다.</p>
+  <ol class="steps">
+    <li><b>사진 접수</b><span>수리가 필요한 부위와 현장 사진 확인</span></li>
+    <li><b>상담 및 안내</b><span>현장 상황에 맞는 작업 방법 안내</span></li>
+    <li><b>현장 확인 및 견적</b><span>현장 상태 확인 후 견적 안내</span></li>
+    <li><b>시공 및 마무리</b><span>협의된 일정에 맞춰 시공 진행</span></li>
+  </ol>
+</div></section>
+
+<section id="finder"><div class="wrap">
+  <h2>어디가 불편하세요?</h2>
+  <p class="sub">작업 이름을 몰라도 됩니다. 장소를 고르면 흔한 증상과 보내실 사진을 알려드립니다.</p>
+  <div class="finder"><div class="places" role="tablist" id="places"></div><div class="panel" id="panel" role="tabpanel" aria-live="polite"></div></div>
+</div></section>
+
+<section id="service"><div class="wrap">
+  <h2>시공 분야</h2>
+  <p class="sub">살면서 생기는 대부분의 수리를 다룹니다.</p><div id="serviceItems"></div></div></section>
+
+<section id="works"><div class="wrap"><h2>시공사례</h2><p class="sub">최근 집수리 이선생에서 진행한 실제 시공사례입니다. 현장 사진을 통해 작업 과정과 시공 전후의 모습을 확인하실 수 있습니다.</p><div class="cases" id="recentCases"></div><p style="text-align:center;margin-top:24px"><a class="portfolio-link" href="#portfolio">전체 시공사례 보기 →</a></p></div></section>
+
+
+
+<section id="faq"><div class="wrap">
+  <h2>FAQ</h2><p class="sub"></p>
+  <details><summary>사진만으로 견적이 나오나요?</summary><p>대략적인 범위와 원인은 사진으로 먼저 안내드립니다. 정확한 금액은 현장을 확인한 뒤 확정합니다.</p></details>
+  <details><summary>부분 수리도 가능한가요?</summary><p>가능한 경우가 많습니다. 전체 교체가 꼭 필요할 때만 그렇게 말씀드립니다.</p></details>
+  <details><summary>작업 시간을 조율할 수 있나요?</summary><p>고객 일정에 맞춰 협의합니다. 영업 시간을 피해야 하는 곳도 미리 말씀해 주세요.</p></details>
+  <details><summary>어느 지역까지 가나요?</summary><p>서울·경기·인천입니다. 인근 지역은 문의해 주세요.</p></details>
+</div></section>
+<section id="quick-contact"><div class="wrap">
+  <h2>수리가 필요하신가요?</h2>
+  <p class="sub">수리가 필요한 곳을 사진과 함께 보내주세요.</p>
+  <a class="big" href="tel:01058546543">010-5854-6543</a>
+  <div class="btns"><a class="btn" href="tel:01058546543">전화 걸기</a><a class="btn yel" href="sms:01058546543">사진 문자 보내기</a><a class="btn ghost" href="#contact">문의하기</a></div>
+</div></section>
+</main>
+
+<section id="portfolioView" class="portfolio-view" hidden><div class="wrap" id="portfolioContent"></div></section><section id="contact" class="portfolio-view" hidden><div class="wrap">
+  <h2 style="margin-bottom:20px">문의하기</h2>
+<p class="sms-intro">수리가 필요한 곳을 사진과 함께 보내주세요.</p>
+
+<form id="inquiry-form" class="inquiry-form">
+<section class="inq-step"><h3><em>01</em> 어떤 작업이 필요하신가요?</h3><div class="work-choices"><label class="work-choice"><input type="radio" name="작업유형" value="잘 모르겠어요"><span><b aria-hidden="true">?</b>잘 모르겠어요</span></label><label class="work-choice"><input type="radio" name="작업유형" value="루버창·갤러리창"><span><b aria-hidden="true">▤</b>루버창·갤러리창</span></label><label class="work-choice"><input type="radio" name="작업유형" value="물받이·누수"><span><b aria-hidden="true">💧</b>물받이·누수</span></label><label class="work-choice"><input type="radio" name="작업유형" value="우수관·홈통"><span><b aria-hidden="true">☂</b>우수관·홈통</span></label><label class="work-choice"><input type="radio" name="작업유형" value="차고문"><span><b aria-hidden="true">▥</b>차고문</span></label><label class="work-choice"><input type="radio" name="작업유형" value="트렌치·배수로"><span><b aria-hidden="true">▦</b>트렌치·배수로</span></label><label class="work-choice"><input type="radio" name="작업유형" value="기타 및 외부작업"><span><b aria-hidden="true">⚒</b>기타 및 외부작업</span></label></div></section>
+<section class="inq-step"><h3><em>02</em> 현장 정보를 알려주세요.</h3>
+<label>지역<input name="지역" placeholder="예: 경기도 김포시"></label>
+<div class="inquiry-grid"><label>건물형태<select name="건물형태"><option value="">선택해 주세요</option><option>아파트</option><option>빌라</option><option>단독주택</option><option>상가</option><option>공장</option><option>창고</option><option>기타</option></select></label><label>층수<input name="층수" placeholder="예: 10층"></label></div>
+<label>문의내용<textarea name="문의내용" rows="3" placeholder="수리가 필요한 곳이나 불편한 점을 알려주세요."></textarea></label></section>
+<section class="inq-step"><h3><em>03</em> 보낼 문자 미리보기</h3><p class="photo-note">선택하고 입력한 내용이 자동으로 반영됩니다.</p><div class="message-preview"><strong>집수리 이선생 · 010-5854-6543</strong><pre id="message-preview" aria-live="polite"></pre></div>
+<div class="inquiry-grid photo-guide"><div>📷 현장 전체 사진</div><div>📷 문제 부위 근접 사진</div></div><p class="photo-note">사진은 문자 발송 시 함께 첨부해 주세요.</p>
+<button type="button" id="copy-inquiry">문의 내용 복사하기</button><p id="copy-status" role="status" aria-live="polite"></p></section></form>
+
+  <a class="big" href="tel:01058546543">010-5854-6543</a>
+  <div class="btns"><a class="btn" href="tel:01058546543">전화 걸기</a><a class="btn yel" data-sms="">사진 문자 보내기</a></div>
+</div></section><footer><div class="wrap">
+  <small>집수리 이선생 · 대표 이시원 · 사업자등록번호 374-13-02646<br>영업 지역 서울특별시 · 경기도 · 인천광역시<br>© 2026 집수리 이선생 <a href="admin.html" style="float:right;font-size:12px;opacity:.8">관리자</a></small>
+</div></footer>
+
+<div class="bar"><a href="tel:01058546543">전화</a><a data-sms="">사진 문자</a><a href="#finder">증상 찾기</a></div>
+
+<script src="content.js"></script>
+<script>
+var site=window.SITE_CONTENT||{"finder": {"title": "어디가 불편하세요?", "intro": "작업 이름을 몰라도 됩니다. 장소를 고르면 흔한 증상과 보내실 사진을 알려드립니다.", "items": [["화장실", "타일, 누수, 문턱, 변기", ["타일이 들뜨거나 갈라짐", "문턱 때문에 드나들기 불편", "천장에서 물이 떨어짐"], "고장 부위 근접 1장, 화장실 전체 1장"], ["주방", "후드, 싱크대, 상판", ["후드 연기가 잘 빠지지 않음", "싱크볼이나 상판이 상함", "빌트인 기기 자리가 맞지 않음"], "싱크대 전체와 하부 배관 사진"], ["베란다·실외기실", "창, 실외기, 난간", ["창 손잡이가 헛돎", "창이 깨졌거나 없음", "실외기 열기가 빠지지 않음"], "창 전체, 손잡이, 설치 위치"], ["옥상·외벽", "빗물, 방수, 도장", ["우수관이 깨지거나 막힘", "방수층이 들뜸", "외벽 페인트가 벗겨짐"], "올려다본 전체, 문제 부위 근접"], ["대문·마당", "대문, 난간, 바닥", ["대문이 처지거나 끌림", "바닥이 내려앉고 물이 고임", "난간이 흔들림"], "문 전체, 경첩 아래, 바닥과 닿는 자리"], ["방·거실", "천장, 벽, 몰딩", ["천장에 얼룩이 번짐", "몰딩이 들뜨거나 상함", "벽에 TV·선반을 달고 싶음"], "벽면 전체와 걸 물건 크기"], ["가게·사무실", "원상복구, 설치", ["철수 전 원상복구 범위가 궁금함", "바닥에 설치물이 남아 있음", "간판·환기창 설치"], "공간 전체와 계약서의 원상복구 조항"]]}, "service": {"title": "시공 분야", "intro": "살면서 생기는 대부분의 수리를 다룹니다.", "items": [{"name": "집 안", "items": [["화장실·주방 설비", "변기, 수전, 싱크볼, 배수"], ["타일·바닥·몰딩", "들뜬 타일, 부분 교체"], ["누수 점검·복구", "원인 확인과 마감 복구"]]}, {"name": "건물 밖", "items": [["문·창·루버창", "대문 수리, 창 교체·제작"], ["우수관·물받이", "교체와 맞춤 설치"], ["용접·도장", "난간, 철문 보수와 마감"]]}, {"name": "상가·사무실", "items": [["원상복구", "계약 기준 범위 확인 후 시공"], ["환기·설치 작업", "환풍기, 간판, 선반"]]}]}};
+function escContent(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+for(const k of ["finder","service"]){document.querySelector("#"+k+" h2").textContent=site[k].title;document.querySelector("#"+k+" .sub").textContent=site[k].intro;}
+document.getElementById("serviceItems").innerHTML=site.service.items.map(g=>`<div class="group">${escContent(g.name)}</div><div class="svc">${g.items.map(x=>`<div><b>${escContent(x[0])}</b><span>${escContent(x[1])}</span></div>`).join("")}</div>`).join("");
+var NUM="01058546543";
+function sms(place){return"sms:"+NUM+"?body="+encodeURIComponent("사진 보내드립니다.\n· 어디가 : "+(place||"")+"\n· 지역 : ")}
+document.querySelectorAll("[data-sms]").forEach(function(a){a.href=sms()});
+var DATA=site.finder.items;
+var pl=document.getElementById("places"),pn=document.getElementById("panel");
+function show(i){var d=DATA[i]; if(!d){pn.textContent="등록된 증상이 없습니다.";return;}
+ [].forEach.call(pl.children,function(b,j){b.setAttribute("aria-selected",j===i)});
+ pn.innerHTML="<h3>"+escContent(d[0])+"</h3><div style='color:var(--muted);font-size:14px'>"+escContent(d[1])+"</div><ul>"+d[2].map(function(s){return"<li>"+escContent(s)+"</li>"}).join("")+"</ul><div class='photo'><b>이런 사진을 보내주세요</b>"+escContent(d[3])+"</div><div class='btns' style='margin-top:16px'><a class='btn' href='tel:"+NUM+"'>전화로 물어보기</a><a class='btn yel' href='"+sms(d[0])+"'>사진 보내기</a></div>";}
+DATA.forEach(function(d,i){var b=document.createElement("button");b.setAttribute("role","tab");b.textContent=d[0];b.onclick=function(){show(i)};pl.appendChild(b)});
+show(0);
+
+ const inquiry=document.getElementById('inquiry-form');
+ function inquiryText(){const d=new FormData(inquiry);return '안녕하세요. 집수리 문의드립니다.\n\n'+['작업유형','지역','건물형태','층수','문의내용'].map(k=>k+': '+(String(d.get(k)||'').trim()||'미입력')).join('\n');}
+ function updateInquiry(){const value=inquiryText();document.getElementById('message-preview').textContent=value;const link=document.querySelector('#contact [data-sms]');if(link)link.href='sms:01058546543'+(/iPad|iPhone|iPod/.test(navigator.userAgent)?'&':'?')+'body='+encodeURIComponent(value);}
+ inquiry.addEventListener('input',updateInquiry);inquiry.addEventListener('change',updateInquiry);inquiry.addEventListener('submit',e=>e.preventDefault());updateInquiry();
+ document.getElementById('copy-inquiry').addEventListener('click',async()=>{const value=inquiryText(),status=document.getElementById('copy-status');try{await navigator.clipboard.writeText(value);status.textContent='복사했습니다. 문자에 붙여넣고 사진을 첨부해 주세요.';}catch(e){const t=document.createElement('textarea');t.value=value;inquiry.appendChild(t);t.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}if(ok)t.remove();status.textContent=ok?'복사했습니다.':'아래 내용을 직접 복사해 주세요.';}});
+</script>
+<script src="cases.js"></script><script>(()=>{const categories=["루버창·갤러리창","물받이·누수","우수관·홈통","차고문","트렌치·배수로","기타 및 외부작업"];const data=window.CASES||[];const main=document.querySelector('main'),view=document.getElementById('portfolioView'),content=document.getElementById('portfolioContent');const e=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const photo=x=>x?`<img loading="lazy" src="${e(x)}" style="width:100%;height:auto;display:block;border-radius:8px" alt="현장 사진">`:'';const title=x=>e(x.region+' '+x.category);const card=x=>`<a class="case portfolio-card" href="#case-${e(x.id)}">${photo(x.cover)}<div class="tx"><small>${e(x.category)}</small><h3>${title(x)}</h3><p>${e(x.description.slice(0,100))}</p><span style="color:var(--mark)">시공 내용 보기 →</span></div></a>`;const empty='<p>등록된 시공사례가 없습니다.</p>';document.getElementById('recentCases').innerHTML=data.slice(0,3).map(card).join('')||empty;function list(cat='전체'){content.innerHTML=`<a class="portfolio-link" href="#top">← 홈</a><h2>전체 시공사례</h2><p class="sub">누적 시공 325건 · 등록 사례 ${data.length}건</p><div class="portfolio-filter">${['전체',...categories].map(c=>`<button class="${c===cat?'active':''}" data-category="${c}">${c}</button>`).join('')}</div><div class="cases">${data.filter(x=>cat==='전체'||x.category===cat).map(card).join('')||empty}</div>`;content.querySelectorAll('[data-category]').forEach(b=>b.onclick=()=>list(b.dataset.category));}function detail(x){content.innerHTML=`<div class="portfolio-detail"><a class="portfolio-link" href="#portfolio">← 전체 시공사례</a><h2>${title(x)}</h2>${photo(x.cover)}<h3>현장 정보</h3><p>${e(x.category)} · ${e(x.region)} · ${e(x.duration)}</p><h3>시공 내용</h3><p style="white-space:pre-wrap">${e(x.description)}</p>${[['시공 전','before'],['작업 과정','process'],['시공 후','after']].map(([label,key])=>x[key]?.length?`<h3>${label}</h3><div class="portfolio-compare">${x[key].map(photo).join('')}</div>`:'').join('')}${/^https:\/\/blog\.naver\.com\//.test(x.blog)?`<p><a class="portfolio-link" href="${e(x.blog)}" target="_blank" rel="noopener">네이버 블로그 원문 보기</a></p>`:''}<a class="portfolio-link" href="#contact">문의하기</a></div>`;}function route(){const h=location.hash,x=data.find(x=>h==='#case-'+x.id),active=h==='#portfolio'||!!x,contact=h==='#contact';main.hidden=active||contact;view.hidden=!active;document.getElementById('contact').hidden=!contact;if(contact){window.scrollTo(0,0)}else if(active){x?detail(x):list();window.scrollTo(0,0)}else if(h)requestAnimationFrame(()=>document.getElementById(h.slice(1))?.scrollIntoView())}window.addEventListener('hashchange',route);route()})();</script></body></html>
